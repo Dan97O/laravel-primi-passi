@@ -12,12 +12,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
 </head>
 
-<body>
+<body class="bg-dark text-light">
     <header class="d-flex justify-content-center align-items-center mt-5">
         <nav>
             <ul class="d-flex gap-5 m-0 list-unstyled">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('contact') }}">Contact</a></li>
+                <li><a class="text-light" href="{{ route('home') }}">Home</a></li>
+                <li><a class="text-light" href="{{ route('contact') }}">Contact</a></li>
             </ul>
         </nav>
     </header>
