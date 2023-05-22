@@ -33,5 +33,12 @@ Route::get('/contact', function () {
             '1231231232',
         ],
     ];
-    return view('home', compact('page_title'));
+    $members = [
+        'nome1',
+        'nome2',
+        'nome3',
+        'nome4',
+        'nome5',
+    ];
+    return view('contact', compact('page_title', 'description', 'contacts', 'members'));
 })->name('contact');
