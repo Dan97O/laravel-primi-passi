@@ -17,3 +17,21 @@ Route::get('/', function () {
     $page_title = 'Hello Laravel';
     return view('home', compact('page_title'));
 })->name('home');
+
+Route::get('/contact', function () {
+    $page_title = 'Contact Page';
+    $description = 'Questa è la pagina dei contatti...';
+    $contacts = [
+        'email' => [
+            'prova@email.com',
+            'prova2@email.com',
+            'prova3@email.com',
+        ],
+        'phone' => [
+            '3333333333',
+            '5555555555',
+            '1231231232',
+        ],
+    ];
+    return view('home', compact('page_title'));
+})->name('contact');
