@@ -23,27 +23,27 @@
     </header>
 
     <main class="d-flex align-items-center flex-column mt-5">
-        <h1>{{ $page_title }}</h1>
+        <h1><i class="fa-brands fa-laravel fa-2xl"></i> {{ $page_title }} <i class="fa-brands fa-laravel fa-2xl"></i></h1>
         <p>{{ $description }}</p>
-        <section>
+        <section class="text-center">
             <h2>Emails:</h2>
-            <ul class="list-unstyled text-center">
+            <ul class="list-unstyled">
                 @foreach($contacts['email'] as $email)
                 <li>{{ $email }}</li>
                 @endforeach
             </ul>
         </section>
-        <section>
+        <section class="text-center">
             <h2>Phone Numbers:</h2>
-            <ul class="list-unstyled text-center">
+            <ul class="list-unstyled">
                 @foreach($contacts['phone'] as $phone)
                 <li>{{ $phone }}</li>
                 @endforeach
             </ul>
         </section>
-        <section>
+        <section class="text-center">
             <h2>Members</h2>
-            <ul class="list-unstyled text-center">
+            <ul class="list-unstyled">
                 @foreach($members as $member)
                 <li>{{ $member }}</li>
                 @endforeach

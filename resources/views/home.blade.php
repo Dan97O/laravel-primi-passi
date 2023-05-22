@@ -22,7 +22,7 @@
         </nav>
     </header>
     <main class="d-flex justify-content-center mt-5">
-        <h1>{{$page_title}} <i class="fa-brands fa-laravel"></i></h1>
+        <h1><i class="fa-brands fa-laravel fa-2xl"></i> {{$page_title}} <i class="fa-brands fa-laravel fa-2xl"></i></h1>
     </main>
 </body>
 
